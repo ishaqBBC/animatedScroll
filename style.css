@@ -10,6 +10,7 @@ body {
 }
 
 canvas {
+  color: white; /** text colour is javascript is disabled **/
   position: fixed;
   left: 50%;
   top: 50%;
