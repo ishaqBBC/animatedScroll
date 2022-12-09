@@ -1,0 +1,19 @@
+html {
+  height: 100vh;
+}
+
+body {
+  background: #060702; /** same background as the images being suppplied**/
+  height: 500vh; /**
+  5⨉ taller than that to give ourselves the necessary scroll length to make this work. 
+  **/
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-height: 100vh;
+  max-width: 100vw;
+  transform: translate(-50%, -50%);
+}
