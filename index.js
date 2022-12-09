@@ -1,4 +1,3 @@
-const html = document.documentElement;
 const canvas = document.getElementById("ali-canvas");
 const context = canvas.getContext("2d");
 
@@ -39,6 +38,7 @@ const updateImage = (index) => {
 };
 
 window.addEventListener("scroll", () => {
+  const html = document.documentElement;
   const scrollTop = html.scrollTop; //value is a measurement of the distance from the element's top to its topmost visible content. When an element's content does not generate a vertical scrollbar, then its scrollTop value is 0.
   const maxScrollTop = html.scrollHeight - window.innerHeight; //scroll height is the elements max height is the  minimum height the element would require in order to fit all the content in the viewport without using a vertical scrollbar.
   const scrollFraction = scrollTop / maxScrollTop; //as a decimal - where you are on the page.
